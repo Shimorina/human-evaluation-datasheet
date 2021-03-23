@@ -3,7 +3,5 @@ This repository accompanies the paper _[The Human Evaluation Datasheet v1.0: A T
 
 Initially the sheet was developed for the [ReproGen](https://reprogen.github.io/) shared task.
 
-## Repository Structure
-
-### Sheet
-the datasheet in LaTeX
+## Sheet Templates
+the datasheet [templates](./sheet/) in LaTeX and Markdown
