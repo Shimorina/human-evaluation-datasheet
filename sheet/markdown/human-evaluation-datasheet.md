@@ -1,13 +1,13 @@
----
-bibliography: ../sheet/latex/human-evaluation-datasheet.bib
-csl: ../sheet/latex/apa-annotated-bibliography.csl
-title: |
-  The Human Evaluation Datasheet 1.0: A Template for Recording  
-  Details of Human Evaluation Experiments in NLP  
-  (described in Shimorina & Belz (2021))
----
+----
+-bibliography: ../sheet/latex/human-evaluation-datasheet.bib
+-csl: ../sheet/latex/apa-annotated-bibliography.csl
+-title: |
+-  The Human Evaluation Datasheet: A Template for Recording
+-  Details of Human Evaluation Experiments in NLP
+-  (described in Shimorina & Belz (2022))
+----
 
-# Paper and Supplementary Resources (Questions 1.1–1.3)
+# Questions about Paper and Supplementary Resources (Questions 1.1–1.3)
 
 Questions 1.1–1.3 record bibliographic and related information. These
 are straightforward and don’t warrant much in-depth explanation.
@@ -19,20 +19,20 @@ reference for the human evaluation experiment, identifying which of the
 experiments the form is being completed for if there are several. If the
 experiment hasn’t been run yet, and the form is being completed for the
 purpose of submitting it for preregistration, simply enter ‘for
-preregistration.’
+preregistration’.
 
-## Question 1.2: Link to website providing resources used in the evaluation experiment (e.g. system outputs, evaluation tools, etc.). If there isn’t one, enter ‘N/A.’
+## Question 1.2: Link to website providing resources used in the evaluation experiment (e.g. system outputs, evaluation tools, etc.). If there isn’t one, enter ‘N/A’.
 
 *What to enter in the text box*: link(s) to any resources used in the
 evaluation experiment, such as system outputs, evaluation tools, etc. If
-there aren’t any publicly shared resources (yet), enter ‘N/A’.  
+there aren’t any publicly shared resources (yet), enter ‘N/A’.
 
 ## Question 1.3: Name, affiliation and email address of person completing this sheet, and of contact author if different.
 
 *What to enter in the text box*: names, affiliations and email addresses
 as appropriate.
 
-# System (Questions 2.1–2.5)
+# System Questions 2.1–2.5
 
 Questions 2.1–2.5 record information about the system(s) (or
 human-authored stand-ins) whose outputs are evaluated in the Evaluation
@@ -97,23 +97,25 @@ below.
     to control a property of the output text, e.g. positive stance,
     formality, author style.
 
-14. ***no input (human generation)***: human generation[1], therefore no
-    system inputs.
+14. ***no input (human generation)***: human generation\[1\], therefore
+    no system inputs.
 
 15. ***other (please specify)***: if input is none of the above, choose
     this option and describe it.
 
 ## Question 2.2: What type of output do the evaluated system(s) generate? Select all that apply. If none match, select ‘Other’ and describe.
 
-Describe the type of input, where input refers to the representations
+Describe the type of output, where output refers to the representations
 and/or data structures shared by all evaluated systems.
 
-This question is about input type, regardless of number. E.g. if the
+This question is about output type, regardless of number. E.g. if the
 output is a set of documents, you would still select *text: document*
 below.
 
-Note that the options for outputs are the same as for inputs minus the
-*control feature* option.
+Note that the options for outputs are the same as for inputs except that
+the *no input (human generation) option* is replaced with
+*human-generated ‘outputs’*, and the *control feature* option is
+removed.
 
 *Check-box options (select all that apply)*:
 
@@ -186,8 +188,8 @@ inputs, outputs and task for some of the options below.
 3.  ***aggregation***: converting inputs (typically *deep linguistic
     representations* or *shallow linguistic representations*) in some
     way in order to reduce redundancy (e.g. representations for ‘they
-    like swimming,’ ‘they like running’ → representation for ‘they like
-    swimming and running’).
+    like swimming’, ‘they like running’ → representation
+    for ‘they like swimming and running’).
 
 4.  ***referring expression generation***: generating *text* to refer to
     a given referent, typically represented in the input as a set of
@@ -266,26 +268,26 @@ inputs, outputs and task for some of the options below.
 20. ***other (please specify)***: if task is none of the above, choose
     this option and describe it.
 
-## Question 2.4: Input Language(s), or ‘N/A.’
+## Question 2.4: Input Language(s), or ‘N/A’.
 
 This field records the language(s) of the inputs accepted by the
 system(s) being evaluated.
 
 *What to enter in the text box*: any language name(s) that apply, mapped
-to standardised full language names in ISO 639-1[2]. E.g. English,
+to standardised full language names in ISO 639-1\[2\]. E.g. English,
 Herero, Hindi. If no language is accepted as (part of) the input, enter
-‘N/A.’
+‘N/A’.
 
-## Question 2.5: Output Language(s), or ‘N/A.’
+## Question 2.5: Output Language(s), or ‘N/A’.
 
 This field records the language(s) of the outputs generated by the
 system(s) being evaluated.
 
 *What to enter in the text box*: any language name(s) that apply, mapped
 to standardised full language names in ISO 639-1 (2019). E.g. English,
-Herero, Hindi. If no language is generated, enter ‘N/A.’
+Herero, Hindi. If no language is generated, enter ‘N/A’.
 
-# Output Sample, Evaluators, Experimental Design
+# Questions about Output Sample, Evaluators, Experimental Design
 
 ## Sample of system outputs (or human-authored stand-ins) evaluated (Questions 3.1.1–3.1.3)
 
@@ -293,20 +295,20 @@ Questions 3.1.1–3.1.3 record information about the size of the sample of
 outputs (or human-authored stand-ins) evaluated per system, how the
 sample was selected, and what its statistical power is.
 
-## Question 3.1.1: How many system outputs (or other evaluation items) are evaluated per system in the evaluation experiment? Answer should be an integer.
+### Question 3.1.1: How many system outputs (or other evaluation items) are evaluated per system in the evaluation experiment? Answer should be an integer.
 
 *What to enter in the text box*: The number of system outputs (or other
 evaluation items) that are evaluated per system by at least one
 evaluator in the experiment, as an integer.
 
-## Question 3.1.2: How are system outputs (or other evaluation items) selected for inclusion in the evaluation experiment? If none match, select ‘Other’ and describe.
+### Question 3.1.2: How are system outputs (or other evaluation items) selected for inclusion in the evaluation experiment? If none match, select ‘Other’ and describe.
 
 *Multiple-choice options (select one)*:
 
 1.  ***by an automatic random process from a larger set***: outputs were
     selected for inclusion in the experiment by a script using a
     pseudo-random number generator; don’t use this option if the script
-    selects every *n*th output (which is not random).
+    selects every \(n\)th output (which is not random).
 
 2.  ***by an automatic random process but using stratified sampling over
     given properties***: use this option if selection was by a random
@@ -327,24 +329,24 @@ evaluator in the experiment, as an integer.
 5.  ***Other (please specify)***: if selection method is none of the
     above, choose this option and describe it.
 
-## Question 3.1.3: What is the statistical power of the sample size?
+### Question 3.1.3: What is the statistical power of the sample size?
 
 *What to enter in the text box*: The results of a statistical power
 calculation on the output sample: provide numerical results and a link
 to the script used (or another way of identifying the script). See,
-e.g., Card et al. (2020).
+e.g., Card et al. (2020), Howcroft & Rieser (2021).
 
-## Evaluators (Questions 3.2.1–3.2.4)
+## Evaluators (Questions 3.2.1–3.2.5)
 
-Questions 3.2.1–3.2.4 record information about the evaluators
+Questions 3.2.1–3.2.5 record information about the evaluators
 participating in the experiment.
 
-## Question 3.2.1: How many evaluators are there in this experiment? Answer should be an integer.
+### Question 3.2.1: How many evaluators are there in this experiment? Answer should be an integer.
 
 *What to enter in the text box*: the total number of evaluators
 participating in the experiment, as an integer.
 
-## Question 3.2.2: What kind of evaluators are in this experiment? Select all that apply. If none match, select ‘Other’ and describe. In all cases, provide details in the text box under ‘Other.’
+### Question 3.2.2: What kind of evaluators are in this experiment? Select all that apply. If none match, select ‘Other’ and describe. In all cases, provide details in the text box under ‘Other’.
 
 *Check-box options (select all that apply)*:
 
@@ -380,14 +382,14 @@ participating in the experiment, as an integer.
     be able to tick 4 options of the above. If that’s not the case, use
     this box to explain.
 
-## Question 3.2.3: How are evaluators recruited?
+### Question 3.2.3: How are evaluators recruited?
 
 *What to enter in the text box*: Please explain how your evaluators are
 recruited. Do you send emails to a given list? Do you post invitations
 on social media? Posters on university walls? Were there any gatekeepers
 involved? What are the exclusion/inclusion criteria?
 
-## Question 3.2.4: What training and/or practice are evaluators given before starting on the evaluation itself?
+### Question 3.2.4: What training and/or practice are evaluators given before starting on the evaluation itself?
 
 *What to enter in the text box*: Use this space to describe any training
 evaluators were given as part of the experiment to prepare them for the
@@ -395,7 +397,7 @@ evaluation task, including any practice evaluations they did. This
 includes any introductory explanations they’re given, e.g. on the start
 page of an online evaluation tool.
 
-## Question 3.2.5: What other characteristics do the evaluators have, known either because these were qualifying criteria, or from information gathered as part of the evaluation?
+### Question 3.2.5: What other characteristics do the evaluators have, known either because these were qualifying criteria, or from information gathered as part of the evaluation?
 
 *What to enter in the text box*: Use this space to list any
 characteristics not covered in previous questions that the evaluators
@@ -406,24 +408,24 @@ location of IP address, educational level, or demographic information
 such as gender, age, etc. Where characteristics differ among evaluators
 (e.g. gender, age, location etc.), also give numbers for each subgroup.
 
-## Experimental design (Questions 3.3.1–3.3.8)
+## Experimental Design Questions 3.3.1–3.3.8
 
 Questions 3.3.1–3.3.8 record information about the experimental design
 of the evaluation experiment.
 
-## Question 3.3.1: Has the experimental design been preregistered? If yes, on which registry?
+### Question 3.3.1: Has the experimental design been preregistered? If yes, on which registry?
 
 *What to enter in the text box*: State ‘Yes’ or ‘No’; if ‘Yes’ also give
 the name of the registry and a link to the registration page for the
 experiment.
 
-## Question 3.3.2: How are responses collected? E.g. paper forms, online survey tool, etc.
+### Question 3.3.2: How are responses collected? E.g. paper forms, online survey tool, etc.
 
 *What to enter in the text box*: Use this space to describe how you
 collected responses, e.g. paper forms, Google forms, SurveyMonkey,
 Mechanical Turk, CrowdFlower, audio/video recording, etc.
 
-## Question 3.3.3: What quality assurance methods are used? Select all that apply. If none match, select ‘Other’ and describe. In all cases, provide details in the text box under ‘Other.’
+### Question 3.3.3: What quality assurance methods are used? Select all that apply. If none match, select ‘Other’ and describe. In all cases, provide details in the text box under ‘Other’.
 
 *Check-box options (select all that apply)*:
 
@@ -457,14 +459,14 @@ Mechanical Turk, CrowdFlower, audio/video recording, etc.
     quality assurance methods used during or after evaluations, and to
     provide additional details for any of the options selected above.
 
-## Question 3.3.4: What do evaluators see when carrying out evaluations? Link to screenshot(s) and/or describe the evaluation interface(s).
+### Question 3.3.4: What do evaluators see when carrying out evaluations? Link to screenshot(s) and/or describe the evaluation interface(s).
 
 *What to enter in the text box*: Use this space to describe the
 interface, paper form, etc. that evaluators see when they carry out the
 evaluation. Link to a screenshot/copy if possible. If there is a
 separate introductory interface/page, include it under Question 3.2.4.
 
-## 3.3.5: How free are evaluators regarding when and how quickly to carry out evaluations? Select all that apply. In all cases, provide details in the text box under ‘Other.’
+### Question 3.3.5: How free are evaluators regarding when and how quickly to carry out evaluations? Select all that apply. In all cases, provide details in the text box under ‘Other’.
 
 *Check-box options (select all that apply)*:
 
@@ -484,7 +486,7 @@ separate introductory interface/page, include it under Question 3.2.4.
     controlled in the experiment, and to provide additional details for
     any of the options selected above.
 
-## 3.3.6: Are evaluators told they can ask questions about the evaluation and/or provide feedback? Select all that apply. In all cases, provide details in the text box under ‘Other.’
+### Question 3.3.6: Are evaluators told they can ask questions about the evaluation and/or provide feedback? Select all that apply. In all cases, provide details in the text box under ‘Other’.
 
 *Check-box options (select all that apply)*:
 
@@ -512,7 +514,7 @@ separate introductory interface/page, include it under Question 3.2.4.
     ways you provide for evaluators to ask questions or provide
     feedback.
 
-## 3.3.7: What are the experimental conditions in which evaluators carry out the evaluations? If none match, select ‘Other’ and describe.
+### Question 3.3.7: What are the experimental conditions in which evaluators carry out the evaluations? If none match, select ‘Other’ and describe.
 
 *Multiple-choice options (select one)*:
 
@@ -571,7 +573,7 @@ separate introductory interface/page, include it under Question 3.2.4.
     or alternative, information about the conditions in which evaluators
     carry out assessments, not covered by the options above.
 
-## 3.3.8: Unless the evaluation is carried out at a place of the evaluators’ own choosing, briefly describe the (range of different) conditions in which evaluators carry out the evaluations.
+### Question 3.3.8: Unless the evaluation is carried out at a place of the evaluators’ own choosing, briefly describe the (range of different) conditions in which evaluators carry out the evaluations.
 
 *What to enter in the text box*: use this space to describe the
 variations in the conditions in which evaluators carry out the
@@ -580,127 +582,126 @@ and situations where they are not controlled.
 
 # Quality Criterion *n* – Definition and Operationalisation
 
-Questions in this section collect information about the *n*th quality
+Questions in this section collect information about the \(n\)th quality
 criterion assessed in the single human evaluation experiment that this
-sheet is being completed for. The HEDS 1.0 form allows this section to
-be completed repeatedly, for up to 10 different quality criteria (see
-further explanation at the end of the section).
-
-For more information, in particular about quality criterion properties
-and evaluation mode properties, see Belz et al. (2020).
+sheet is being completed for.
 
 ## Quality criterion properties (Questions 4.1.1–4.1.3)
 
 Questions 4.1.1–4.1.3 capture the aspect of quality that is assessed by
 a given quality criterion in terms of three orthogonal properties. They
-help determine e.g. whether or not the same aspect of quality is being
+help determine whether or not the same aspect of quality is being
 evaluated in different evaluation experiments. The three properties
 characterise quality criteria in terms of (i) what type of quality is
 being assessed; (ii) what aspect of the system output is being assessed;
 and (iii) whether system outputs are assessed in their own right or with
 reference to some system-internal or system-external frame of reference.
+For full explanations see Belz et al. (2020).
 
-## Question 4.1.1: What type of quality is assessed by the quality criterion?
+### Question 4.1.1: What type of quality is assessed by the quality criterion?
 
 *Multiple-choice options (select one)*:
 
-1.  ***Correctness***: select this option if it is possible to state,
+1.  ***Correctness***: Select this option if it is possible to state,
     generally for all outputs, the conditions under which outputs are
     maximally correct (hence of maximal quality). E.g. for
-    Grammaticality, outputs are (maximally) correct if they contain no
-    grammatical errors; for Semantic Completeness, outputs are correct
-    if they express all the content in the input.
+    *Grammaticality*,\[3\] outputs are (maximally) correct if they
+    contain no grammatical errors; for *Semantic Completeness*, outputs
+    are correct if they express all the content in the input.
 
-2.  ***Goodness***: select this option if, in contrast to correctness
+2.  ***Goodness***: Select this option if, in contrast to correctness
     criteria, there is no single, general mechanism for deciding when
-    outputs are maximally good, only for deciding for two outputs which
-    is better and which is worse. E.g. for Fluency, even if outputs
-    contain no disfluencies, there may be other ways in which any given
-    output could be more fluent.
+    outputs are maximally good, only for deciding for any two outputs
+    which is better and which is worse. E.g. for *Fluency*, even if
+    outputs contain no disfluencies, there may be other ways in which
+    any given output could be more fluent.
 
-3.  ***Features***: choose this option if, in terms of property *X*
+3.  ***Feature***: Choose this option if, in terms of property \(X\)
     captured by the criterion, outputs are not generally better if they
-    are more *X*, but instead, depending on evaluation context, more *X*
-    may be better or less *X* may be better. E.g. outputs can be more
-    specific or less specific, but it’s not the case that outputs are,
-    in the general case, better when they are more specific.
+    are more \(X\), but instead, depending on evaluation context, more
+    \(X\) may be either better or worse. E.g. for *Specificity*, outputs
+    can be more specific or less specific, but it’s not the case that
+    outputs are, in the general case, better when they are more
+    specific.
 
-## Question 4.1.2: Which aspect of system outputs is assessed by the quality criterion?
+### Question 4.1.2: Which aspect of system outputs is assessed by the quality criterion?
 
 *Multiple-choice options (select one)*:
 
-1.  ***Form of output***: choose this option if the criterion assesses
-    the form of outputs alone, e.g. Grammaticality is only about the
+1.  ***Form of output***: Choose this option if the criterion assesses
+    the form of outputs alone, e.g. *Grammaticality* is only about the
     form, a sentence can be grammatical yet be wrong or nonsensical in
     terms of content.
 
-2.  ***Content of output***: choose this option if the criterion
-    assesses the content/meaning of the output alone, e.g. Meaning
-    Preservation only assesses output content; two sentences can be
-    considered to have the same meaning, but differ in form.
+2.  ***Content of output***: Select this option if the criterion
+    assesses the content/meaning of the output alone, e.g. *Meaning
+    Preservation* only assesses content; two sentences can be considered
+    to have the same meaning, but differ in form.
 
-3.  ***Both form and content of output***: choose this option if the
+3.  ***Both form and content of output***: Choose this option if the
     criterion assesses outputs as a whole, not just form or just
-    content. E.g. Coherence is a property of outputs as a whole, either
-    form or meaning can detract from it.
+    content. E.g. *Coherence* is a property of outputs as a whole,
+    either form or meaning can detract from it. Inherently extrinsic
+    criteria such as *Usefulness* or *Task Completion* also fall in this
+    category.
 
-## Question 4.1.3: Is each output assessed for quality in its own right, or with reference to a system-internal or external frame of reference?
+### Question 4.1.3: Is each output assessed for quality in its own right, or with reference to a system-internal or external frame of reference?
 
 *Multiple-choice options (select one)*:
 
-1.  ***Quality of output in its own right***: choose this option if
+1.  ***Quality of output in its own right***: Select this option if
     output quality is assessed without referring to anything other than
     the output itself, i.e. no system-internal or external frame of
-    reference. E.g. Poeticness is assessed by considering (just) the
+    reference. E.g. *Poeticness* is assessed by considering (just) the
     output and how poetic it is.
 
-2.  ***Quality of output relative to the input***: choose this option if
-    output quality is assessed relative to the input. E.g. Answerability
-    is the degree to which the output question can be answered from
-    information in the input.
+2.  ***Quality of output relative to the input***: Choose this option if
+    output quality is assessed relative to the input.
+    E.g. *Answerability* is the degree to which the output question can
+    be answered from information in the input.
 
 3.  ***Quality of output relative to a system-external frame of
-    reference***: choose this option if output quality is assessed with
+    reference***: Choose this option if output quality is assessed with
     reference to system-external information, such as a knowledge base,
     a person’s individual writing style, or the performance of an
-    embedding system. E.g. Factual Accuracy assesses outputs relative to
-    a source of real-world knowledge.
+    embedding system. E.g. *Factual Accuracy* assesses outputs relative
+    to a source of real-world knowledge.
 
 ## Evaluation mode properties (Questions 4.2.1–4.2.3)
 
 Questions 4.2.1–4.2.3 record properties that are orthogonal to quality
-criteria, i.e. any given quality criterion can in principle be combined
-with any of the modes (although some combinations are more common than
-others).
+criteria (covered by questions in the preceding section), i.e. any given
+quality criterion can in principle be combined with any of the modes
+(although some combinations are more common than others).
 
-## Question 4.2.1: Does an individual assessment involve an objective or a subjective judgment?
-
-*Multiple-choice options (select one)*:
-
-1.  ***Objective***: Examples of objective assessment include any
-    automatically counted or otherwise quantified measurements such as
-    mouse-clicks, occurrences in text, etc. Repeated assessments of the
-    same output with an objective-mode evaluation method always yield
-    the same score/result.
-
-2.  ***Subjective***: Subjective assessments involve ratings, opinions
-    and preferences by evaluators. Some criteria lend themselves more
-    readily to subjective assessments, e.g. Friendliness of a
-    conversational agent, but an objective measure e.g. based on lexical
-    markers is also conceivable.
-
-## Question 4.2.2: Are outputs assessed in absolute or relative terms?
+### Question 4.2.1: Does an individual assessment involve an objective or a subjective judgment?
 
 *Multiple-choice options (select one)*:
 
-1.  ***Absolute***: choose this option if evaluators are shown outputs
+1.  ***Objective***: Choose this option if the evaluation uses objective
+    assessment, e.g. any automatically counted or otherwise quantified
+    measurements such as mouse-clicks, occurrences in text, etc.
+    Repeated assessments of the same output with an objective-mode
+    evaluation method always yield the same score/result.
+
+2.  ***Subjective***: Choose this option in all other cases. Subjective
+    assessments involve ratings, opinions and preferences by evaluators.
+    Some criteria lend themselves more readily to subjective
+    assessments, e.g. *Friendliness* of a conversational agent, but an
+    objective measure e.g. based on lexical markers is also conceivable.
+
+### Question 4.2.2: Are outputs assessed in absolute or relative terms?
+
+*Multiple-choice options (select one)*:
+
+1.  ***Absolute***: Select this option if evaluators are shown outputs
     from a single system during each individual assessment.
 
-2.  ***Relative***: choose this option if evaluators are shown outputs
+2.  ***Relative***: Choose this option if evaluators are shown outputs
     from multiple systems at the same time during assessments, typically
     ranking or preference-judging them.
 
-## Question 4.2.3: Is the evaluation intrinsic or extrinsic?
+### Question 4.2.3: Is the evaluation intrinsic or extrinsic?
 
 *Multiple-choice options (select one)*:
 
@@ -716,25 +717,30 @@ others).
 
 ## Response elicitation (Questions 4.3.1–4.3.11)
 
-Questions 4.3.1–4.3.11 record information about how responses are
-elicited for the quality criterion this section is being completed for.
+The questions in this section concern response elicitation, by which we
+mean how the ratings or other measurements that represent assessments
+for the quality criterion in question are obtained, covering what is
+presented to evaluators, how they select response and via what type of
+tool, etc. The eleven questions (4.3.1–4.3.11) are based on the
+information annotated in the large scale survey of human evaluation
+methods in NLG by Howcroft et al. (2020).
 
-## Question 4.3.1: What do you call the quality criterion in explanations/interfaces to evaluators? Enter ‘N/A’ if criterion not named.
+### Question 4.3.1: What do you call the quality criterion in explanations/interfaces to evaluators? Enter ‘N/A’ if criterion not named.
 
 *What to enter in the text box*: the name you use to refer to the
 quality criterion in explanations and/or interfaces created for
 evaluators. Examples of quality criterion names include Fluency,
-Clarity, Meaning Preservation. If no name is used, state ‘N/A.’
+Clarity, Meaning Preservation. If no name is used, state ‘N/A’.
 
-## Question 4.3.2: What definition do you give for the quality criterion in explanations/interfaces to evaluators? Enter ‘N/A’ if no definition given.
+### Question 4.3.2: What definition do you give for the quality criterion in explanations/interfaces to evaluators? Enter ‘N/A’ if no definition given.
 
 *What to enter in the text box*: Copy and past the verbatim definition
 you give to evaluators to explain the quality criterion they’re
 assessing. If you don’t explicitly call it a definition, enter the
 nearest thing to a definition you give them. If you don’t give any
-definition, state ‘N/A.’
+definition, state ‘N/A’.
 
-## Question 4.3.3: Size of scale or other rating instrument (i.e. how many different possible values there are). Answer should be an integer or ‘continuous’ (if it’s not possible to state how many possible responses there are). Enter ‘N/A’ if there is no rating instrument.
+### Question 4.3.3: Size of scale or other rating instrument (i.e. how many different possible values there are). Answer should be an integer or ‘continuous’ (if it’s not possible to state how many possible responses there are). Enter ‘N/A’ if there is no rating instrument.
 
 *What to enter in the text box*: The number of different response values
 for this quality criterion. E.g. for a 5-point Likert scale, the size to
@@ -743,9 +749,9 @@ there’s also a no-preference option, enter 3. For a slider that is
 mapped to 100 different values for the purpose of recording assessments,
 the size to enter is 100. If no rating instrument is used (e.g. when
 evaluation gathers post-edits or qualitative feedback only), enter
-‘N/A.’
+‘N/A’.
 
-## Question 4.3.4: List or range of possible values of the scale or other rating instrument. Enter ‘N/A,’ if there is no rating instrument.
+## Question 4.3.4: List or range of possible values of the scale or other rating instrument. Enter ‘N/A’, if there is no rating instrument.
 
 *What to enter in the text box*: list, or give the range of, the
 possible values of the rating instrument. The list or range should be of
@@ -758,7 +764,7 @@ assessments, the range *1–100* might be entered. If no rating instrument
 is used (e.g. when evaluation gathers post-edits or qualitative feedback
 only), enter ’N/A’.
 
-## Question 4.3.5: How is the scale or other rating instrument presented to evaluators? If none match, select ‘Other’ and describe.
+### Question 4.3.5: How is the scale or other rating instrument presented to evaluators? If none match, select ‘Other’ and describe.
 
 *Multiple-choice options (select one)*:
 
@@ -779,14 +785,14 @@ only), enter ’N/A’.
     you present it to evaluators. Use the text box to describe the
     rating instrument and link to a screenshot.
 
-## Question 4.3.6: If there is no rating instrument, describe briefly what task the evaluators perform (e.g. ranking multiple outputs, finding information, playing a game, etc.), and what information is recorded. Enter ‘N/A’ if there is a rating instrument.
+### Question 4.3.6: If there is no rating instrument, describe briefly what task the evaluators perform (e.g. ranking multiple outputs, finding information, playing a game, etc.), and what information is recorded. Enter ‘N/A’ if there is a rating instrument.
 
 *What to enter in the text box*: If (and only if) there is no rating
 instrument, i.e. you entered ‘N/A’ for Questions 4.3.3–4.3.5, describe
 the task evaluators perform in this space. Otherwise, here enter ‘N/A’
 if there *is* a rating instrument.
 
-## Question 4.3.7: What is the verbatim question, prompt or instruction given to evaluators (visible to them during each individual assessment)? 
+### Question 4.3.7: What is the verbatim question, prompt or instruction given to evaluators (visible to them during each individual assessment)? 
 
 *What to enter in the text box*: Copy and paste the verbatim text that
 evaluators see during each assessment, that is intended to convey the
@@ -795,9 +801,9 @@ evaluation task to them. E.g. *Which of these texts do you prefer?* Or
 to improve it to the point where you would be happy to provide it to a
 client.*
 
-## Question 4.3.8: Form of response elicitation. If none match, select ‘Other’ and describe.
+### Question 4.3.8: Form of response elicitation. If none match, select ‘Other’ and describe.
 
-*Multiple-choice options (select one)*:[3]
+*Multiple-choice options (select one)*:\[4\]
 
 1.  ***(dis)agreement with quality statement***: Participants specify
     the degree to which they agree with a given quality statement by
@@ -857,34 +863,28 @@ client.*
     of response elicitation used in assessing the quality criterion if
     it doesn’t fall in any of the above categories.
 
-## Question 4.3.9: How are raw responses from participants aggregated or otherwise processed to obtain reported scores for this quality criterion? State if no scores reported.
+### Question 4.3.9: How are raw responses from participants aggregated or otherwise processed to obtain reported scores for this quality criterion? State if no scores reported.
 
 *What to enter in the text box*: normally a set of separate assessments
 is collected from evaluators and is converted to the results as
 reported. Describe here the method(s) used in the conversion(s).
-E.g. macro-averages or micro-averages are computed from numerical scores
-to provide summary, per-system results.
+E.g. macro-averages or micro-averages are computed from numerical
+scores to provide summary, per-system results.
 
-## Question 4.3.10: Method(s) used for determining effect size and significance of findings for this quality criterion.
+### Question 4.3.10: Method(s) used for determining effect size and significance of findings for this quality criterion.
 
 *What to enter in the text box*: A list of methods used for calculating
 the effect size and significance of any results, both as reported in the
 paper given in Question 1.1, for this quality criterion. If none
-calculated, state ‘None.’
+calculated, state ‘None’.
 
-## Question 4.3.11: Has the inter-annotator and intra-annotator agreement between evaluators for this quality criterion been measured? If yes, what method was used, and what are the agreement scores?
+### Question 4.3.11: Has the inter-annotator and intra-annotator agreement between evaluators for this quality criterion been measured? If yes, what method was used, and what are the agreement scores?
 
 *What to enter in the text box*: the methods used to compute, and
 results obtained from, any measures of inter-annotator and
 intra-annotator agreement obtained for the quality criterion.
 
-The section ends with the question **Is there another quality criterion
-in the evaluation experiment that you haven’t completed this section for
-yet?** If **Yes** is selected, please copy this section and complete it
-for the next criterion. If **No**, the next section will be the Ethics
-section below.
-
-# Ethics
+# Ethics Questions (Questions 5.1-5.4)
 
 The questions in this section relate to ethical aspects of the
 evaluation. Information can be entered in the text box provided, and/or
@@ -922,7 +922,7 @@ or *ex post* impact assessments that have been carried out in relation
 to the evaluation experiment, such that the assessment plan and process,
 as well as the outcomes, were captured in written form. Link to
 documents if possible. Types of impact assessment include data
-protection impact assessments, e.g. under GDPR.[4]Environmental and
+protection impact assessments, e.g. under GDPR.\[5\] Environmental and
 social impact assessment frameworks are also available.
 
 # Credits
@@ -933,7 +933,7 @@ significant changes. Questions 4.1.1–4.2.3 relating to quality criteria,
 and some of the questions about system outputs, evaluators, and
 experimental design (3.1.1–3.2.3, 4.3.5, 4.3.6, 4.3.9–4.3.11) are based
 on Belz et al. (2020). HEDS was also informed by van der Lee et al.
-(2019, 2021) and by Gehrmann et al. (2021)’s[5] data card guide.
+(2019, 2021) and by Gehrmann et al. (2021)’s\[6\] data card guide.
 
 More generally, the original inspiration for creating a ‘datasheet’ for
 describing human evaluation experiments of course comes from seminal
@@ -942,27 +942,39 @@ al. (2020).
 
 # References
 
-Gehrmann, S., Adewumi, T., Aggarwal, K., Ammanamanchi, P. S.,
-Anuoluwapo, A., Bosselut, A., Chandu, K. R., Clinciu, M., Das, D.,
-Dhole, K. D., Du, W., Durmus, E., Dušek, O., Emezue, C., Gangal, V.,
-Garbacea, C., Hashimoto, T., Hou, Y., Jernite, Y., … Zhou, J. (2021).
-*The GEM benchmark: Natural language generation, its evaluation and
-metrics*. <https://arxiv.org/abs/2102.01672>
-
-Shimorina, A., & Belz, A. (2021). *The human evaluation datasheet 1.0: A
-template for recording details of human evaluation experiments in NLP*.
-<https://arxiv.org/abs/2103.09710>
-
-van der Lee, C., Gatt, A., van Miltenburg, E., & Krahmer, E. (2021).
-Human evaluation of automatically generated text: Current trends and
-best practice guidelines. *Computer Speech & Language*, *67*, 101151.
-https://doi.org/<https://doi.org/10.1016/j.csl.2020.101151>
+Banarescu, L., Bonial, C., Cai, S., Georgescu, M., Griffitt, K.,
+Hermjakob, U., Knight, K., Koehn, P., Palmer, M., & Schneider, N.
+(2013). Abstract Meaning Representation for sembanking. *Proceedings of
+the 7th Linguistic Annotation Workshop and Interoperability with
+Discourse*, 178–186. <https://www.aclweb.org/anthology/W13-2322>
 
 Belz, A., Mille, S., & Howcroft, D. M. (2020). Disentangling the
 properties of human evaluation methods: A classification system to
 support comparability, meta-evaluation and reproducibility testing.
 *Proceedings of the 13th International Conference on Natural Language
 Generation*, 183–194. <https://www.aclweb.org/anthology/2020.inlg-1.24>
+
+Bender, E. M., & Friedman, B. (2018). Data statements for natural
+language processing: Toward mitigating system bias and enabling better
+science. *Transactions of the Association for Computational
+Linguistics*, *6*, 587–604. <https://doi.org/10.1162/tacl_a_00041>
+
+Card, D., Henderson, P., Khandelwal, U., Jia, R., Mahowald, K., &
+Jurafsky, D. (2020). With little power comes great responsibility.
+*Proceedings of the 2020 Conference on Empirical Methods in Natural
+Language Processing (Emnlp)*, 9263–9274.
+<https://doi.org/10.18653/v1/2020.emnlp-main.745>
+
+Gebru, T., Morgenstern, J., Vecchione, B., Vaughan, J. W., Wallach, H.,
+III, H. D., & Crawford, K. (2020). *Datasheets for datasets*.
+<http://arxiv.org/abs/1803.09010>
+
+Gehrmann, S., Adewumi, T., Aggarwal, K., Ammanamanchi, P. S.,
+Anuoluwapo, A., Bosselut, A., Chandu, K. R., Clinciu, M., Das, D.,
+Dhole, K. D., Du, W., Durmus, E., Dušek, O., Emezue, C., Gangal, V.,
+Garbacea, C., Hashimoto, T., Hou, Y., Jernite, Y., … Zhou, J. (2021).
+*The GEM benchmark: Natural language generation, its evaluation and
+metrics*. <http://arxiv.org/abs/2102.01672>
 
 Howcroft, D. M., Belz, A., Clinciu, M.-A., Gkatzia, D., Hasan, S. A.,
 Mahamood, S., Mille, S., Miltenburg, E. van, Santhanam, S., & Rieser, V.
@@ -971,16 +983,15 @@ evaluation sheets and standardised definitions. *Proceedings of the 13th
 International Conference on Natural Language Generation*, 169–182.
 <https://www.aclweb.org/anthology/2020.inlg-1.23>
 
-Card, D., Henderson, P., Khandelwal, U., Jia, R., Mahowald, K., &
-Jurafsky, D. (2020). With little power comes great responsibility.
-*Proceedings of the 2020 Conference on Empirical Methods in Natural
-Language Processing (EMNLP)*, 9263–9274.
-<https://doi.org/10.18653/v1/2020.emnlp-main.745>
+Howcroft, D. M., & Rieser, V. (2021). What happens if you treat ordinal
+ratings as interval data? Human evaluations in NLP are even more
+under-powered than you think. *Proceedings of the 2021 Conference on
+Empirical Methods in Natural Language Processing*, 8932–8939.
+<https://doi.org/10.18653/v1/2021.emnlp-main.703>
 
-
-Gebru, T., Morgenstern, J., Vecchione, B., Vaughan, J. W., Wallach, H.,
-III, H. D., & Crawford, K. (2020). *Datasheets for datasets*.
-<https://arxiv.org/abs/1803.09010>
+Kamp, H., & Reyle, U. (2013). *From discourse to logic: Introduction to
+modeltheoretic semantics of natural language, formal logic and discourse
+representation theory* (Vol. 42). Springer Science & Business Media.
 
 Mitchell, M., Wu, S., Zaldivar, A., Barnes, P., Vasserman, L.,
 Hutchinson, B., Spitzer, E., Raji, I. D., & Gebru, T. (2019). Model
@@ -988,36 +999,34 @@ cards for model reporting. *Proceedings of the Conference on Fairness,
 Accountability, and Transparency*, 220–229.
 <https://doi.org/10.1145/3287560.3287596>
 
+Shimorina, A., & Belz, A. (2022). The human evaluation datasheet: A
+template for recording details of human evaluation experiments in NLP.
+*Proceedings of the 2nd Workshop on Human Evaluation of Nlp Systems
+(Humeval)*, 54–75. <https://aclanthology.org/2022.humeval-1.6>
+
 van der Lee, C., Gatt, A., Miltenburg, E. van, Wubben, S., & Krahmer, E.
 (2019). Best practices for the human evaluation of automatically
 generated text. *Proceedings of the 12th International Conference on
 Natural Language Generation*, 355–368.
 <https://www.aclweb.org/anthology/W19-8643.pdf>
 
-Bender, E. M., & Friedman, B. (2018). Data statements for natural
-language processing: Toward mitigating system bias and enabling better
-science. *Transactions of the Association for Computational
-Linguistics*, *6*, 587–604. <https://doi.org/10.1162/tacl_a_00041>
+van der Lee, C., Gatt, A., van Miltenburg, E., & Krahmer, E. (2021).
+Human evaluation of automatically generated text: Current trends and
+best practice guidelines. *Computer Speech & Language*, *67*, 101151.
+<https://doi.org/https://doi.org/10.1016/j.csl.2020.101151>
 
-Banarescu, L., Bonial, C., Cai, S., Georgescu, M., Griffitt, K.,
-Hermjakob, U., Knight, K., Koehn, P., Palmer, M., & Schneider, N.
-(2013). Abstract Meaning Representation for sembanking. *Proceedings of
-the 7th Linguistic Annotation Workshop and Interoperability with
-Discourse*, 178–186. <https://www.aclweb.org/anthology/W13-2322>
+1.  \[human-generation\]We use the term ‘human generation’ where the
+    items being evaluated have been created manually, rather than
+    generated by an automatic system.
 
-Kamp, H., & Reyle, U. (2013). *From discourse to logic: Introduction to
-modeltheoretic semantics of natural language, formal logic and discourse
-representation theory* (Vol. 42). Springer Science & Business Media.
+2.  \[iso\]<https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>
 
+3.  We take all examples of quality criteria from published reports of
+    evaluations, via the annotated database compiled by Howcroft et al.
+    (2020).
 
-[1] We use the term
-‘human generation’ where the items being evaluated have been created
-manually, rather than generated by an automatic system.
+4.  Explanations adapted from Howcroft et al. (2020).
 
-[2] <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>
+5.  <https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/accountability-and-governance/data-protection-impact-assessments/>
 
-[3] Explanations adapted from Howcroft et al. (2020).
-
-[4] <https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/accountability-and-governance/data-protection-impact-assessments/>
-
-[5] <https://gem-benchmark.com/data_cards/guide>
+6.  <https://gem-benchmark.com/data_cards/guide>

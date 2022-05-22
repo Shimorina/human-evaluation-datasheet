@@ -1,4 +1,4 @@
-#!bin/sh
+#!/bin/sh
 
 pandoc --version
 pandoc -f latex \
@@ -6,8 +6,9 @@ pandoc -f latex \
 	   -s ../sheet/latex/human-evaluation-datasheet-no-boxes.tex \
 	   -o ../sheet/markdown/human-evaluation-datasheet.md \
 	   --bibliography ../sheet/latex/human-evaluation-datasheet.bib \
-	   -C \
 	   --csl ../sheet/latex/apa-annotated-bibliography.csl \
+	   # -C \
 
-# add reference section
-# delete divs in references
+# When the script finishes:
+# - add the section: # References
+
